@@ -51,6 +51,7 @@
     "import/no-extraneous-dependencies": "off",
     "import/no-named-default": "off",
     "no-multi-str": "off",
-    "@typescript-eslint/no-empty-interface": "off"
+    "@typescript-eslint/no-empty-interface": "off",
+    "react/no-unknown-property": "off"
   }
 }
