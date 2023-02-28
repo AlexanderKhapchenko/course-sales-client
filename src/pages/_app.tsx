@@ -1,6 +1,9 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Noto_Sans as NotoSans } from '@next/font/google';
+
+const notoSans = NotoSans({ weight: ['300', '400', '500', '700'], style: 'normal', subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -11,6 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <style jsx global>
+        {`
+          html {
+            font-family: ${notoSans.style.fontFamily};
+          }
+        `}
+      </style>
       <Component {...pageProps} />
     </>
   );
