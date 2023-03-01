@@ -52,6 +52,7 @@
     "import/no-named-default": "off",
     "no-multi-str": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "react/no-unknown-property": "off"
+    "react/no-unknown-property": "off",
+    "react/jsx-no-useless-fragment": "off"
   }
 }
